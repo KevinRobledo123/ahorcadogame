@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Challenge 2 - ONE</title>
+        <link rel="stylesheet" href="./style.css">
+        <meta content="viewport" content="width=device-width">
+    </head>
+
+    <body>
+        <header class="titulo">Juego del ahorcado</header>
+        <section class="seccion-inicio">
+            <button class="boton-iniciar">Iniciar juego</button>
+            <button class="boton-agregar">Agregar nueva palabra</button>
+        </section>
+
+        <section class="seccion-agregar">
+            <input type="text" class="capturar-palabra" maxlength="10" placeholder="Ingresa una palabra">
+            <span>&#x1F6C8 Sólo caracteres, máximo 10 caracteres</span>
+            <div>
+                <button class="boton-anadir">Añadir palabra</button>
+                <button class="boton-regresar">Regresar</button>
+            </div>
+        </section>
+
+        <section class="seccion-hombre">
+            <div class="hombre-ahorcado">
+                <img id="hombre" alt="hombre ahorcado">
+            </div>
+
+            <div class="adivinado"></div>
+            <div class="errado"></div>
+
+            <form class="botones" action="javascript:void(0)">
+                <input type="button" class="boton-nuevo" value="Nuevo juego" onclick="nuevoJuego()">
+                <input type="button" class="boton-rendirse" value="Rendirse">
+            </form>
+        </section>
+
+        <footer>
+            <p class="footer">
+                Todos los derechos reservados Kevin Robledo &copy 2022
+            </p>
+        </footer>
+
+        <script src="./app.js"></script>
+    </body>
+</html>
